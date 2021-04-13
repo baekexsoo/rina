@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "centre-auto-a2efe"
+  },
+  "targets": {
+    "centre-auto-a2efe": {
+      "hosting": {
+        "pk2-angular": [
+          "centre-auto-a2efe"
+        ]
+      }
+    }
   }
 }

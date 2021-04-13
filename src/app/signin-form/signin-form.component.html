@@ -1,1 +1,26 @@
-<p>signin-form works!</p>
+<form class="register-form">
+    <label>Email</label>
+    <div class="input-group form-group-no-border">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+              <i class="nc-icon nc-email-85"></i>
+          </span>
+        </div>
+
+        <input type="text" class="form-control" placeholder="Email">
+    </div>
+
+    <label>Mot de passe</label>
+    <div class="input-group form-group-no-border">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+              <i class="nc-icon nc-key-25"></i>
+          </span>
+        </div>
+        <input type="password" class="form-control" placeholder="Mot de passe">
+    </div>
+    <button class="btn btn-danger btn-block btn-round">Connexion</button>
+</form>
+<div class="forgot">
+    <a routerLink="/signup" class="btn btn-link btn-danger">Pas encore inscrit ?</a>
+</div>

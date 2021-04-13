@@ -1,1 +1,36 @@
-<p>signup-form works!</p>
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('./assets/img/IG.jpg');">
+        <div class="filter"></div>
+        <div class="container">
+            <div class="row">
+                <p class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                    <p class="card card-register">
+                        <h2 class="title">INSCRIPTION</h2>
+                        <form 
+                        [formGroup]="signUpform"
+                        (ngsubmit)="onSubmitSignupForm"=[]>
+                        <div *ngIf="errorMsg"
+                        class= alert alert-danger>{{ errorMsg }}</div>
+
+
+                    <label>Prénom</label> <app-user-detail [user]="currentUser"></app-user-detail>
+
+                    <div class="imput-group form-group-no-border">
+                        <div class="imput-group-prepend">
+                            <span class="input-group-text">
+                                <i class="nc-icon nc-alert-circle-i">
+
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Prénom" firstControlName="firstName" [(ngModel)]="user.firstName">
+                  
+
+                        </form>
+                           
+                              
+    
+</div>
+</div>
+
